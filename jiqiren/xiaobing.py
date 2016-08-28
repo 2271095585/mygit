@@ -66,7 +66,7 @@ def xiaobing(word):
 def ew_read():
     f = open('ask.txt').readlines()
     a = 0
-    for i in f[5500:5835]:
+    for i in f[6000:6200]:
         if i == '\n':
             pass
         else:
