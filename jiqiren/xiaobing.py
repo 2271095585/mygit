@@ -51,9 +51,9 @@ def xiaobing(word):
         "SSOLoginState":"1471428809",
         "wvr":"6",
         "SCF":"ArUx4TLS-7bmiMtoSe_BLrdRVAHEzKouwwbvdUrtGWzcdu9azJLemNz-Vzwy_ewBNgHXZJ7TFODdCXetHpGRA04.",
-        "SUB":"_2A256xUAbDeTxGeNJ6VIS9CzOwjuIHXVZszbTrDV8PUNbmtANLU2mkW9Fr7-KHbJRA2vk8bJVbqFegKSuPQ..",
-        "SUBP":"0033WrSXqPxfM725Ws9jqgMF55529P9D9W5EblZ6ZZJ6-aqQ.QnpYIsc5JpX5K2hUgL.Fo-Neo50ShzE1KM2dJLoIE8uINyuINnLxKnLBKqL1h2LxK-LB.eL1h5LxK-LB.qL1het",
-        "SUHB":"0OMUVDDIeOsOof",
+        "SUB":"_2A256xvhzDeTxGeNJ6VIS9CzOwjuIHXVZsm67rDV8PUJbmtANLVDzkW-LMC8F97RV71lWXkVPG04N1RuYPg..",
+        "SUBP":"0033WrSXqPxfM725Ws9jqgMF55529P9D9W5EblZ6ZZJ6-aqQ.QnpYIsc5JpX5o2p5NHD95QfS0z7e0BEeo.NWs4DqcjyIc_RIc_Ri--Ri-2ciKnpi--fi-ihiKn7i--fi-isiKn0",
+        "SUHB":"05iK-EO_A3me2V",
         "ALF":"1503364867",
         "UOR":"www.baidu.com,weibo.com,www.baidu.com",
     }
@@ -66,7 +66,7 @@ def xiaobing(word):
 def ew_read():
     f = open('ask.txt').readlines()
     a = 0
-    for i in f[2500:3500]:
+    for i in f[5500:6000]:
         if i == '\n':
             pass
         else:
