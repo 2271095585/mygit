@@ -10,7 +10,6 @@ def header_get(word):
         if 'HTTP/' in h:
             pass
         else:
-            print h
             h_k,h_v = h.split(':',1)
             headers[h_k.strip()] = h_v.strip()
     return headers
@@ -25,4 +24,16 @@ def cookie_get(word):
     return cookies
 
 # cookie_get(d)
+
+#去除文件空格
+def space_delete(file_old,file_new):
+    f = open(file_old).readlines()
+    for i in f:
+        if i == '\n':
+            pass
+        else:
+            ff = open(file_new,'a')
+            ff.write(i)
+            ff.close()
+
 

@@ -51,8 +51,8 @@ def xiaobing(word):
         "SSOLoginState":"1471428809",
         "wvr":"6",
         "SCF":"ArUx4TLS-7bmiMtoSe_BLrdRVAHEzKouwwbvdUrtGWzcdu9azJLemNz-Vzwy_ewBNgHXZJ7TFODdCXetHpGRA04.",
-        "SUB":"_2A256xvhzDeTxGeNJ6VIS9CzOwjuIHXVZsm67rDV8PUJbmtANLVDzkW-LMC8F97RV71lWXkVPG04N1RuYPg..",
-        "SUBP":"0033WrSXqPxfM725Ws9jqgMF55529P9D9W5EblZ6ZZJ6-aqQ.QnpYIsc5JpX5o2p5NHD95QfS0z7e0BEeo.NWs4DqcjyIc_RIc_Ri--Ri-2ciKnpi--fi-ihiKn7i--fi-isiKn0",
+        "SUB":"_2A256x-NwDeTxGeNJ6VIS9CzOwjuIHXVZtVO4rDV8PUNbmtANLUb7kW8RXt6jhol3Mnv9R0LeSdv2yEdX-A..",
+        "SUBP":"033WrSXqPxfM725Ws9jqgMF55529P9D9W5EblZ6ZZJ6-aqQ.QnpYIsc5JpX5K2hUgL.Fo-Neo50ShzE1KM2dJLoIE8uINyuINnLxKnLBKqL1h2LxK-LB.eL1h5LxK-LB.qL1het",
         "SUHB":"05iK-EO_A3me2V",
         "ALF":"1503364867",
         "UOR":"www.baidu.com,weibo.com,www.baidu.com",
@@ -66,14 +66,14 @@ def xiaobing(word):
 def ew_read():
     f = open('ask.txt').readlines()
     a = 0
-    for i in f[6000:6200]:
+    for i in f[16500:]:
         if i == '\n':
             pass
         else:
             word = i.replace('\n','')
             print word
             xiaobing(word)
-            time.sleep(4)
+            time.sleep(3)
             print a
             a += 1
 
