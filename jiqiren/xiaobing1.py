@@ -45,7 +45,7 @@ def xiaobing(word):
              'JSESSIONID': '59FD88653E3AB2D1787C39DC9282912D',
              'SINAGLOBAL': '4375420690052.9136.1472444070362',
              'SSOLoginState': '1472444108',
-             'SUB': '_2A256x8acDeTxGeNM6FQS8ibEwzSIHXVZtL9UrDV8PUNbmtANLWSlkW9NRd3PFEqEOxMGvFO9kPMg4JqX4A..',
+             'SUB': '_2A2563IMaDeTxGeNM6FQS8ibEwzSIHXVZq_PSrDV8PUNbmtBeLUX3kW9OZ5VCqRNdenazpSDMGFjLsIpYcA..',
              'SUBP': '0033WrSXqPxfM725Ws9jqgMF55529P9D9WFzEqE9SMqhjcMLzezzACqI5JpX5KzhUgL.Fo-Ee0q0eonR1hn2dJLoI7fjIPS79PikIg4_dN9L',
              'SUHB': '0gHSd2GVmA-USw',
              'ULV': '1472444070372:1:1:1:4375420690052.9136.1472444070362:',
@@ -60,7 +60,7 @@ def xiaobing(word):
 def ew_read():
     f = open('ask.txt').readlines()
     a = 0
-    for i in f[14000:15000]:
+    for i in f[5500:6000]:
         if i == '\n':
             pass
         else:

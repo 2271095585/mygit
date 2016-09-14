@@ -9,7 +9,7 @@ for j in range(0,len(f)):
         a_id = ask.index(d)
         if f[j+1] != ask[a_id+1]:
             result = 'ask:'+ d.strip() + " ==answer== " + f[j+1]
-            ff = open("answer_xiaobing5.txt",'a')
+            ff = open("answer_xiaobing4.txt",'a')
             ff.write(result)
             ff.close()
             print result

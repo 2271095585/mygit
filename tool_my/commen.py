@@ -5,13 +5,14 @@ d = """_s_tentry=www.liaoxuefeng.com; Apache=9085287592609.355.1472270958542; SI
 #header转化
 def header_get(word):
     headers = {}
-    header_list = word.split("\n")
+    header_list = word.strip().split("\n")
     for h in header_list:
         if 'HTTP/' in h:
             pass
         else:
             h_k,h_v = h.split(':',1)
             headers[h_k.strip()] = h_v.strip()
+    pprint.pprint(headers)
     return headers
 
 #cookie转化
@@ -21,6 +22,7 @@ def cookie_get(word):
     for c in cookie_list:
         c_k,c_v = c.split("=",1)
         cookies[c_k.strip()] = c_v.strip()
+    pprint.pprint(cookies)
     return cookies
 
 # cookie_get(d)
