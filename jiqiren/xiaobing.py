@@ -50,8 +50,8 @@ def xiaobing(word):
         "ULV":"1471332290379:5:5:1:2526642889676.096.1471332290214:1470811838474",
         "SSOLoginState":"1471428809",
         "wvr":"6",
-        "SCF":"ArUx4TLS-7bmiMtoSe_BLrdRVAHEzKouwwbvdUrtGWzcKpmzdVZ8-mw_2cz-X0lkfisqLR0IGcHbJqCkIxHOHME.",
-        "SUB":"_2A2563Jp8DeTxGeNJ6VIS9CzOwjuIHXVZq4y0rDV8PUNbmtBeLUzzkW9Zc4anTXiu5Jv98Hz3MSs-agYTFw..",
+        "SCF":"ArUx4TLS-7bmiMtoSe_BLrdRVAHEzKouwwbvdUrtGWzcY3o4KJ_KDWSIoPeJ4lq90iC3O1nkX9Snad_qUHJC6IA.",
+        "SUB":"_2A256-dUsDeTxGeNJ6VIS9CzOwjuIHXVZj0HkrDV8PUNbmtAKLRPzkW8WmDSAWTmo0UAi7HDquRTvNl3VlA..",
         "SUBP":"0033WrSXqPxfM725Ws9jqgMF55529P9D9W5EblZ6ZZJ6-aqQ.QnpYIsc5JpX5K2hUgL.Fo-Neo50ShzE1KM2dJLoIE8uINyuINnLxKnLBKqL1h2LxK-LB.eL1h5LxK-LB.qL1het",
         "SUHB":"05iK-EO_A3me2V",
         "ALF":"1503364867",
@@ -66,7 +66,7 @@ def xiaobing(word):
 def ew_read():
     f = open('ask.txt').readlines()
     a = 0
-    for i in f[2767:3000]:
+    for i in f:
         if i == '\n':
             pass
         else:

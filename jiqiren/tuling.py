@@ -10,7 +10,7 @@ import time
 def answer_get(word):
     url = 'http://www.tuling123.com/api/product_exper/chat.jhtml'
     data = {
-        'key':'de7209df94f641b5ae0a12b3ca0a8769',
+        'key':'efebeec191e447828f650896daa00327',
         'info':word,
         'userid':'hhly419'
     }
@@ -24,22 +24,29 @@ def answer_get(word):
 def ew_read():
     f = open('ask.txt').readlines()
     a = 0
-    for i in f[5155:7000]:
+    for i in f:
         word = i.replace('\n','')
         print word
         try:
-            answ = answer_get(word)
-            time.sleep(0.5)
-            result = word + "  ==answer==  " + answ + '\n'
-            ff = open("answer_tuling.txt",'a')
-            ff.write(result)
-            ff.close()
-            print a
-            a += 1
+            if word == '':
+                ff = open("answer_tuling.txt",'a')
+                ff.write('\n')
+                ff.close()
+            else:
+                answ = answer_get(word)
+                time.sleep(0.5)
+                result = word + "  ==answer==  " + answ + '\n'
+                ff = open("answer_tuling.txt",'a')
+                ff.write(result)
+                ff.close()
+                print a
+                a += 1
         except:
             ef = open("err.txt",'a')
             ef.write(i)
             ef.close()
+
+
 ew_read()
 
 
