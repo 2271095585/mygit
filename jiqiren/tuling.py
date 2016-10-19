@@ -15,25 +15,22 @@ def answer_get(word):
         'userid':'hhly419'
     }
     r = requests.post(url,data=data)
-    print r
-    print r.content
     answer =  r.content.split("<Content><![CDATA[")[1].split("]]")[0]
-    print answer
+    print word,' === ',answer
     return answer
     
 def ew_read():
     f = open('ask.txt').readlines()[:4000]
     a = 0
     for i in f:
-        word = i.replace('\n','')
-        print word
+        word = i.replace('\n','').strip()
         try:
             if word == 'HHLY':
                 ff = open("answer_tuling.txt",'a')
                 ff.write('HHLY\n')
                 ff.close()
             else:
-                answ = answer_get(word)
+                answ = answer_get(word.decode('gbk').encode('utf8'))
                 time.sleep(0.5)
                 result = word.decode('gbk').encode('utf8') + "  ==answer==  " + answ + '\n'
                 ff = open("answer_tuling.txt",'a')
