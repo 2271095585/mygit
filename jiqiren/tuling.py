@@ -22,20 +22,20 @@ def answer_get(word):
     return answer
     
 def ew_read():
-    f = open('ask.txt').readlines()
+    f = open('ask.txt').readlines()[:4000]
     a = 0
     for i in f:
         word = i.replace('\n','')
         print word
         try:
-            if word == '':
+            if word == 'HHLY':
                 ff = open("answer_tuling.txt",'a')
-                ff.write('\n')
+                ff.write('HHLY\n')
                 ff.close()
             else:
                 answ = answer_get(word)
                 time.sleep(0.5)
-                result = word + "  ==answer==  " + answ + '\n'
+                result = word.decode('gbk').encode('utf8') + "  ==answer==  " + answ + '\n'
                 ff = open("answer_tuling.txt",'a')
                 ff.write(result)
                 ff.close()
