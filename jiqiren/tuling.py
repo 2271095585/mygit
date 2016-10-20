@@ -1,9 +1,5 @@
 #-*-encoding:utf-8-*-
 import requests
-from bs4 import BeautifulSoup
-import urllib2
-from urllib import urlencode
-from urllib import quote
 import time
 
 
@@ -12,7 +8,7 @@ def answer_get(word):
     data = {
         'key':'efebeec191e447828f650896daa00327',
         'info':word,
-        'userid':'hhly419'
+        'userid':'hy419'
     }
     r = requests.post(url,data=data)
     answer =  r.content.split("<Content><![CDATA[")[1].split("]]")[0]
@@ -20,7 +16,7 @@ def answer_get(word):
     return answer
     
 def ew_read():
-    f = open('ask.txt').readlines()[:4000]
+    f = open('ask.txt').readlines()[16000:20000]
     a = 0
     for i in f:
         word = i.replace('\n','').strip()
