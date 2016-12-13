@@ -37,19 +37,6 @@ def space_delete(file_old,file_new):
             ff.write(i)
             ff.close()
 
-word = """POST /lemma/default/ShowLemmaDefault,$FinalBorder.$NewSearchBar.sf.sd HTTP/1.1
-Host: baike.sogou.com
-Connection: keep-alive
-Content-Length: 140
-Cache-Control: max-age=0
-Origin: http://baike.sogou.com
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36
-Content-Type: application/x-www-form-urlencoded
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Referer: http://baike.sogou.com/v173080.htm?fromTitle=%E5%BE%B7%E5%B7%9E
-Accept-Encoding: gzip, deflate
-Accept-Language: zh-CN,zh;q=0.8
-Cookie: CXID=783E41C7CED8195EAF5A82756182E599; SUV=00BE651278ED5B9A579F0FBA6AF21327; pgv_pvi=4826541056; sct=7; IPLOC=CN4403; GOTO=Af99044; SMYUV=1474884605365675; ad=Xyllllllll2gXZdqlllllVKE53olllllWnCbukllll9llllljOxlw@@@@@@@@@@@; SUID=000000001527860A579EC294000BCE7A; ssuid=9226894656; SNUID=5BD848C275734A6AA8C4052E76CD652F; sw_uuid=5152454277; ld=hlllllllll2gXZMclllllVkV7MllllllWnCbukllll9lllll9klll5@@@@@@@@@@; JSESSIONID=81620D6637D290EE5F3DEE2EA43C570F; token=9B014E77FBB8EA4878606E4D47681803423EAFB9; _ga=GA1.2.1608638842.1476781995; ww_searchWord=
-"""
-header_get(word)
+word = """JSESSIONID=57F1C757C9DEE02F5DA2C88478CC1BA5; BIGipServerotn=972030474.50210.0000; _jc_save_fromStation=%u6DF1%u5733%u5317%2CIOQ; _jc_save_toStation=%u5E7F%u5DDE%u5357%2CIZQ; _jc_save_fromDate=2016-12-11; _jc_save_wfdc_flag=dc"""
+# header_get(word)
+cookie_get(word)

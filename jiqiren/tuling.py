@@ -11,14 +11,15 @@ def answer_get(word):
         'userid':'hy419'
     }
     r = requests.post(url,data=data)
+    print r.content
     answer =  r.content.split("<Content><![CDATA[")[1].split("]]")[0]
     print word,' === ',answer
     return answer
     
 def ew_read():
-    f = open('ask.txt').readlines()[16000:20000]
+    f = open('ask.txt').readlines()[25000:30000]
     a = 0
-    for i in f:
+    for i in f[:15]:
         word = i.replace('\n','').strip()
         try:
             if word == 'HHLY':
